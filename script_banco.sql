@@ -1,7 +1,10 @@
-drop database if exists lab5;
-create database if not exists lab5;
 
+create schema lab5;
 use lab5;
+
+create user 'lab5'@'localhost' identified by 'lab5';
+
+grant all prvileges on *.* to lab5@'localhost';
 
 CREATE TABLE cli_cliente(
 	cli_id BIGINT NOT NULL AUTO_INCREMENT,

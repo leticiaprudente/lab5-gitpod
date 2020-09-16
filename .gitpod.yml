@@ -1,0 +1,7 @@
+ports:
+  - port: 8080
+tasks:
+  - init: mysql < script_banco.sql
+  - init: ./mvnw install -DskipTests=false
+image: gitpod/workspace-mysql
+  
