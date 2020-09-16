@@ -1,3 +1,5 @@
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-Ready--to--Code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/leticiaprudente/lab5-gitpod)
+
 # LAB5
 
 Repositório para a disciplina ```Laboratório de Desenvolvimento em Banco de Dados V```
