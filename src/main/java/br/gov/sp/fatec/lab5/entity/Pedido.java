@@ -1,8 +1,5 @@
 package br.gov.sp.fatec.lab5.entity;
 
-import lombok.Getter;
-import lombok.NoArgsConstructor;
-import lombok.Setter;
 
 import javax.persistence.*;
 import java.util.*;
@@ -12,8 +9,7 @@ import java.util.stream.Stream;
 
 @Entity
 @Table(name = "ped_pedido")
-@Getter
-@Setter @NoArgsConstructor
+
 @AttributeOverride(name = "id", column = @Column(name = "ped_id"))
 public class Pedido extends Identificador{
 

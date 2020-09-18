@@ -11,12 +11,12 @@
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/Usuario.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/PagamentoDinheiro.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/Role.java
-/workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/Item.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/Cliente.java
+/workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/Item.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/repository/RoleRepository.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/repository/ItemRepository.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/Fornecedor.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/repository/ItemPedidoRepository.java
-/workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/Identificador.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/Lab5Application.java
+/workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/Identificador.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/repository/FornecedorRepository.java

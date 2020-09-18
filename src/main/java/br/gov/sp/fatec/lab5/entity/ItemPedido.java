@@ -1,13 +1,10 @@
 package br.gov.sp.fatec.lab5.entity;
 
-import lombok.Data;
-import lombok.NoArgsConstructor;
-
 import javax.persistence.*;
 
 @Entity
 @Table(name = "item_pedido")
-@Data @NoArgsConstructor
+
 public class ItemPedido extends Identificador {
 
     public ItemPedido(Item item, Long quantidade){

@@ -1,13 +1,9 @@
 package br.gov.sp.fatec.lab5.entity;
 
-import lombok.Getter;
-import lombok.Setter;
 
 import javax.persistence.Entity;
 import javax.persistence.Table;
 
-@Getter
-@Setter
 @Entity
 @Table(name = "pag_pagamento_dinheiro")
 public class PagamentoDinheiro extends Pagamento {

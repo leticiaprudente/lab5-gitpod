@@ -1,16 +1,12 @@
 package br.gov.sp.fatec.lab5.entity;
 
-import lombok.Getter;
-import lombok.Setter;
-
 import javax.persistence.*;
 import java.util.ArrayList;
 import java.util.List;
 
 @Entity
 @Table(name = "for_fornecedor")
-@Getter
-@Setter
+
 @AttributeOverride(name = "id", column = @Column(name = "for_id"))
 public class Fornecedor extends Identificador {
 
