@@ -1,7 +1,7 @@
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/service/PedidoService.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/PagamentoCartao.java
-/workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/repository/PedidoRepository.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/ClientePJ.java
+/workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/repository/PedidoRepository.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/repository/UsuarioRepository.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/ItemPedido.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/Pagamento.java
@@ -17,6 +17,6 @@
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/repository/ItemRepository.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/Fornecedor.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/repository/ItemPedidoRepository.java
-/workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/Lab5Application.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/Identificador.java
+/workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/Lab5Application.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/repository/FornecedorRepository.java

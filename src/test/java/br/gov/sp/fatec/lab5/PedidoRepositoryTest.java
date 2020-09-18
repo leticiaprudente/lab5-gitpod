@@ -68,7 +68,6 @@ public class PedidoRepositoryTest {
                         new ItemPedido(item2, 2L))));
 
         Assertions.assertEquals(1600, pedido.getValorTotal());
-        Assertions.assertNotNull(pedido.getId());
     }
 
     @Test
