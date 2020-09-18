@@ -21,7 +21,11 @@ public class ClientePF extends Cliente {
     private String cpf;
 
 
-	@Override
+	public ClientePF(String string) {
+        this.cpf=string;
+    }
+
+    @Override
     public String toString() {
         return "ClientePF{" +
                 "cpf='" + cpf + '\'' +
@@ -29,5 +33,13 @@ public class ClientePF extends Cliente {
                 ", endereco='" + endereco + '\'' +
                 ", id=" + id +
                 '}';
+    }
+
+    public void setNome(String string) {
+        this.nome=string;
+    }
+
+    public void setEndereco(String end){
+        this.endereco=end;
     }
 }

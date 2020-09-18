@@ -22,6 +22,22 @@ public class Pedido extends Identificador{
         setDataDaCompra(dataDaCompra);
     }
 
+    public void setDataDaCompra(Date dataDaCompra) {
+        this.dataDaCompra=dataDaCompra;
+    }
+
+    public Date getDataDaCompra(){
+        return dataDaCompra;
+    }
+
+    public void setCliente(Cliente cliente){
+        this.cliente=cliente;
+    }
+    public Cliente getCliente(){
+        return cliente;
+    }
+    
+
     public boolean add(Pagamento arg0) {
 		return pagamentos.add(arg0);
 	}
@@ -130,4 +146,13 @@ public class Pedido extends Identificador{
                 ", id=" + id +
                 '}';
     }
+
+    public void setItems(Set<ItemPedido> itemPedidos) {
+        this.items=itemPedidos;
+    }
+
+    public Long getId() {
+        return id;
+    }
+    
 }

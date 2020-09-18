@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: br.gov.sp.fatec.lab5.PedidoRepositoryTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 0, Errors: 2, Skipped: 0, Time elapsed: 0.414 s <<< FAILURE! - in br.gov.sp.fatec.lab5.PedidoRepositoryTest
+deveBuscarPedidosDoClienteComItem  Time elapsed: 0.177 s  <<< ERROR!
+java.lang.IndexOutOfBoundsException: Index 0 out of bounds for length 0
+	at br.gov.sp.fatec.lab5.PedidoRepositoryTest.deveBuscarPedidosDoClienteComItem(PedidoRepositoryTest.java:92)
+
+deveSalvarUmPedido  Time elapsed: 0.063 s  <<< ERROR!
+java.lang.NullPointerException
+	at br.gov.sp.fatec.lab5.PedidoRepositoryTest.deveSalvarUmPedido(PedidoRepositoryTest.java:70)
+

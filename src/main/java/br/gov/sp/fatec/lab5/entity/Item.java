@@ -22,8 +22,10 @@ public class Item extends Identificador {
     @JoinColumn(name = "for_id")
     private Fornecedor fornecedor;
 
-    public Item(String string, double d, Object object) {
-		// TODO Auto-generated constructor stub
+    public Item(String string, double d, Fornecedor object) {
+        this.nome=string;
+        this.preco=d;
+        this.fornecedor=object;
 	}
 
 	@Override
@@ -33,5 +35,13 @@ public class Item extends Identificador {
                 ", preco=" + preco +
                 ", id=" + id +
                 '}';
+    }
+
+    public Double getPreco() {
+        return preco;
+    }
+
+    public String getNome() {
+        return nome;
     }
 }
