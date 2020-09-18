@@ -13,6 +13,8 @@ import java.util.stream.Stream;
 @AttributeOverride(name = "id", column = @Column(name = "ped_id"))
 public class Pedido extends Identificador{
 
+    public Pedido(){
+    }
     public Pedido(Cliente cliente, Date dataDaCompra){
         setCliente(cliente);
         setDataDaCompra(dataDaCompra);

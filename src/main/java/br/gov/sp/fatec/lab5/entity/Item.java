@@ -16,6 +16,9 @@ public class Item extends Identificador {
     @JoinColumn(name = "for_id")
     private Fornecedor fornecedor;
 
+    public Item(){
+    }
+    
     public Item(String string, double d, Fornecedor object) {
         this.nome=string;
         this.preco=d;

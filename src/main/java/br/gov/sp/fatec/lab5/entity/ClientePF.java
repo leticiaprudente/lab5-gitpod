@@ -11,6 +11,8 @@ public class ClientePF extends Cliente {
     @Column(name = "cpf", length = 14)
     private String cpf;
 
+    public ClientePF(){
+    }
 
 	public ClientePF(String string) {
         this.cpf=string;

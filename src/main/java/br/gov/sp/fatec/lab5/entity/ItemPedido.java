@@ -6,6 +6,9 @@ import javax.persistence.*;
 @Table(name = "item_pedido")
 
 public class ItemPedido extends Identificador {
+    
+    public ItemPedido(){
+    }
 
     public ItemPedido(Item item, Long quantidade){
         setItem(item);

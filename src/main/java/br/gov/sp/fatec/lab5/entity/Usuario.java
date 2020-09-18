@@ -57,7 +57,7 @@ public class Usuario {
 	}
 
 	public void setUsuario(String nome) {
-		// TODO Auto-generated method stub
+		this.usuario=nome;
 		
 	}
 
