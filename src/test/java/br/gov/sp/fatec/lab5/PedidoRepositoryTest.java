@@ -14,12 +14,16 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.TestInstance;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+import org.springframework.test.annotation.Rollback;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.Arrays;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.List;
 
+@Rollback
+@Transactional
 @SpringBootTest
 @TestInstance(TestInstance.Lifecycle.PER_CLASS)
 public class PedidoRepositoryTest {
@@ -88,7 +92,7 @@ public class PedidoRepositoryTest {
 
         List<Pedido> pedidos = pedidoRepository.findByClienteAndItem("Gabriel", "cabo usb");
 
-        Assertions.assertEquals(1600.00, pedidos.get(0).getValorTotal());
+        Assertions.assertEquals(3, pedidos.size());
 
     }
 

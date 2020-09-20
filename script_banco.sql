@@ -1,10 +1,9 @@
-drop if exists schema lab;
 create schema lab5;
 use lab5;
 
 create user 'lab5'@'localhost' identified by 'lab5';
 
-grant select, insert, delete, update privileges on lab5.* to lab5@'localhost';
+grant select, insert, delete, update on lab5.* to lab5@'localhost';
 
 
 CREATE TABLE cli_cliente(

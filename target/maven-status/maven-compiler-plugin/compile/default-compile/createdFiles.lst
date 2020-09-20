@@ -18,5 +18,5 @@ br/gov/sp/fatec/lab5/repository/RoleRepository.class
 br/gov/sp/fatec/lab5/repository/ItemPedidoRepository.class
 br/gov/sp/fatec/lab5/repository/PedidoRepository.class
 br/gov/sp/fatec/lab5/entity/Pedido.class
-br/gov/sp/fatec/lab5/entity/ClientePJ.class
 br/gov/sp/fatec/lab5/entity/PagamentoDinheiro.class
+br/gov/sp/fatec/lab5/entity/ClientePJ.class
