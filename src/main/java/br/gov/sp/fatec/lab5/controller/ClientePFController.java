@@ -12,7 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin
+@CrossOrigin(origins = "http://localhost:8080")
 @RestController
 @RequestMapping("/clientesPF") 
 public class ClientePFController {
@@ -55,7 +55,7 @@ public class ClientePFController {
     public ResponseEntity atualizar(@RequestBody ClientePF cliente){
         return ResponseEntity.accepted().body(cliservice.update(cliente));
     }
-    
+
     @JsonView(Views.Autenticado.class)
     @DeleteMapping("/{id}")
     public ResponseEntity deletar(@PathVariable Long id){
