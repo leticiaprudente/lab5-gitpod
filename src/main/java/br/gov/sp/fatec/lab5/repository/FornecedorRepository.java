@@ -6,5 +6,5 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface FornecedorRepository extends CrudRepository<Fornecedor, Long> {
-    Fornecedor findByNome(String nome);
+    Fornecedor findBymvNome(String nome);
 }

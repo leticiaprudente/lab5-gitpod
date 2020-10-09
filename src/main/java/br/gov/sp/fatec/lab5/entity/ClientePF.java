@@ -4,10 +4,12 @@ import javax.persistence.Column;
 import javax.persistence.DiscriminatorValue;
 import javax.persistence.Entity;
 
+import com.fasterxml.jackson.annotation.JsonView;
+
 @Entity
 @DiscriminatorValue(value = "pf")
 public class ClientePF extends Cliente {
-
+    @JsonView(Views.Autenticado.class)
     @Column(name = "cpf", length = 14)
     private String cpf;
 
