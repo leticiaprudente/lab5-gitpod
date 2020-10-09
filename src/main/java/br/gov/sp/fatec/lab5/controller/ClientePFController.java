@@ -12,7 +12,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
-@CrossOrigin(origins = "http://teste.com")
+@CrossOrigin(origins = "http://localhost:8080")
 @RestController
 @RequestMapping("/clientesPF") 
 public class ClientePFController {
@@ -37,7 +37,7 @@ public class ClientePFController {
 
     @JsonView(Views.Publico.class)
     @GetMapping("/nome")
-    public ResponseEntity<Cliente> findByNome(@RequestParam String nome){
+    public ResponseEntity<Cliente> findByNome(@RequestParam String nome) {
         return ResponseEntity.ok(cliservice.buscarPorNome(nome));
     }
 

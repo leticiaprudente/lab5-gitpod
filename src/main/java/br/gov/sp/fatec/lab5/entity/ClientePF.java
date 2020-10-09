@@ -33,9 +33,15 @@ public class ClientePF extends Cliente {
     public void setNome(String string) {
         this.nome=string;
     }
-
+    public String getNome(){
+        return nome;
+    }
     public void setEndereco(String end){
         this.endereco=end;
+    }
+
+    public String getEndereco(){
+        return endereco;
     }
 
     public void setId(Long id) {

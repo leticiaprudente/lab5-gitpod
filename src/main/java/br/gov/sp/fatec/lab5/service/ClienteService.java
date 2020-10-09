@@ -4,6 +4,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.gov.sp.fatec.lab5.entity.Cliente;
+import br.gov.sp.fatec.lab5.entity.ClientePF;
 import br.gov.sp.fatec.lab5.exception.RegistroNaoEncontradoException;
 import br.gov.sp.fatec.lab5.repository.ClienteRepository;
 @Service
@@ -24,6 +25,7 @@ public class ClienteService {
         //return repository.findById(id).orElse(null);
     }
 
+
     public void save(Cliente cliente){
         repository.save(cliente);
     }
@@ -42,5 +44,9 @@ public class ClienteService {
             return cli;
         }throw new RegistroNaoEncontradoException("Nome não encontrado"); 
         //return repository.findByNome(nome);
+    }
+
+    public static ClientePF cadastrarClientePF(String nome, String cpf, String endereco) {
+        return null;
     }
 }
