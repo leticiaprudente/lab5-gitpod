@@ -15,7 +15,7 @@ public class ClienteService {
         return repository.findAll();
     }
 
-    public Cliente buscarPorId(Long id){
+    public Cliente buscarUsuarioPorId(Long id){
         return repository.findById(id).orElse(null);
     }
 

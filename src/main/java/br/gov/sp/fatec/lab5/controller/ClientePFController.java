@@ -15,17 +15,17 @@ public class ClientePFController {
 
     @Autowired
     private ClienteService cliservice;
-
+    //List<Cliente> 
     @GetMapping
     public ResponseEntity<Iterable<Cliente>> buscarTodos(){
         return ResponseEntity.ok(cliservice.findAll());
     }
 
     @GetMapping("/{id}")
-    public ResponseEntity<Cliente> buscarPorId(@PathVariable Long id){
+    public ResponseEntity<Cliente> buscarUsuarioPorId(@PathVariable Long id){
         //TODO: retornar 404 caso o id não exista
         //TODO: tratar erro caso id == null
-        return ResponseEntity.ok(cliservice.buscarPorId(id));
+        return ResponseEntity.ok(cliservice.buscarUsuarioPorId(id));
     }
 
     @GetMapping("/q")

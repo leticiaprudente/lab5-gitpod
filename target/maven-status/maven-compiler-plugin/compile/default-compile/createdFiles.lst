@@ -1,6 +1,6 @@
 br/gov/sp/fatec/lab5/entity/ItemPedido.class
-br/gov/sp/fatec/lab5/service/ClienteService.class
 br/gov/sp/fatec/lab5/entity/PagamentoCartao.class
+br/gov/sp/fatec/lab5/service/ClienteService.class
 br/gov/sp/fatec/lab5/entity/Pagamento.class
 br/gov/sp/fatec/lab5/entity/Fornecedor.class
 br/gov/sp/fatec/lab5/entity/Identificador.class
@@ -8,9 +8,9 @@ br/gov/sp/fatec/lab5/repository/FornecedorRepository.class
 br/gov/sp/fatec/lab5/repository/UsuarioRepository.class
 br/gov/sp/fatec/lab5/repository/ItemRepository.class
 br/gov/sp/fatec/lab5/repository/RoleRepository.class
-br/gov/sp/fatec/lab5/controller/ClientePFController.class
-br/gov/sp/fatec/lab5/entity/ClientePJ.class
 br/gov/sp/fatec/lab5/entity/PagamentoDinheiro.class
+br/gov/sp/fatec/lab5/entity/ClientePJ.class
+br/gov/sp/fatec/lab5/controller/ClientePFController.class
 br/gov/sp/fatec/lab5/entity/Usuario.class
 br/gov/sp/fatec/lab5/repository/ClienteRepository.class
 br/gov/sp/fatec/lab5/entity/Item.class
