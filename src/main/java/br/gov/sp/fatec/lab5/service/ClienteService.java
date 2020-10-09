@@ -16,7 +16,11 @@ public class ClienteService {
     }
 
     public Cliente buscarUsuarioPorId(Long id){
-        return repository.findById(id).orElse(null);
+        Cliente cli = repository.findAById(id);
+        if(cli!= null){
+            return cli;
+        }throw new RuntimeException("Id de usuário não encontrado"); 
+        //return repository.findById(id).orElse(null);
     }
 
     public void save(Cliente cliente){
@@ -32,6 +36,10 @@ public class ClienteService {
     }
 
     public Cliente buscarPorNome(String nome) {
-        return repository.findByNome(nome);
+        Cliente cli = repository.findByNome(nome);
+        if(cli!= null){
+            return cli;
+        }throw new RuntimeException("Nome não encontrado"); 
+        //return repository.findByNome(nome);
     }
 }
