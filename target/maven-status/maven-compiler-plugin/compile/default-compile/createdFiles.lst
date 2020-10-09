@@ -1,3 +1,5 @@
+br/gov/sp/fatec/lab5/entity/Views$Publico.class
+br/gov/sp/fatec/lab5/entity/Views$Autenticado.class
 br/gov/sp/fatec/lab5/entity/ItemPedido.class
 br/gov/sp/fatec/lab5/entity/PagamentoCartao.class
 br/gov/sp/fatec/lab5/service/ClienteService.class
@@ -13,6 +15,7 @@ br/gov/sp/fatec/lab5/entity/ClientePJ.class
 br/gov/sp/fatec/lab5/controller/ClientePFController.class
 br/gov/sp/fatec/lab5/entity/Usuario.class
 br/gov/sp/fatec/lab5/repository/ClienteRepository.class
+br/gov/sp/fatec/lab5/entity/Views.class
 br/gov/sp/fatec/lab5/entity/Item.class
 br/gov/sp/fatec/lab5/Lab5Application.class
 br/gov/sp/fatec/lab5/service/PedidoService.class
