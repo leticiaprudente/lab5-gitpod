@@ -1,10 +1,11 @@
 package br.gov.sp.fatec.lab5.service;
 
-import br.gov.sp.fatec.lab5.entity.Cliente;
-import br.gov.sp.fatec.lab5.repository.ClienteRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import br.gov.sp.fatec.lab5.entity.Cliente;
+import br.gov.sp.fatec.lab5.exception.RegistroNaoEncontradoException;
+import br.gov.sp.fatec.lab5.repository.ClienteRepository;
 @Service
 public class ClienteService {
 
@@ -19,7 +20,7 @@ public class ClienteService {
         Cliente cli = repository.findAById(id);
         if(cli!= null){
             return cli;
-        }throw new RuntimeException("Id de usuário não encontrado"); 
+        }throw new RegistroNaoEncontradoException("Id de usuário não encontrado"); 
         //return repository.findById(id).orElse(null);
     }
 
@@ -39,7 +40,7 @@ public class ClienteService {
         Cliente cli = repository.findByNome(nome);
         if(cli!= null){
             return cli;
-        }throw new RuntimeException("Nome não encontrado"); 
+        }throw new RegistroNaoEncontradoException("Nome não encontrado"); 
         //return repository.findByNome(nome);
     }
 }

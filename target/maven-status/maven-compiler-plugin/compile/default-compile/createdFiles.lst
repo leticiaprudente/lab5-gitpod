@@ -10,6 +10,7 @@ br/gov/sp/fatec/lab5/repository/FornecedorRepository.class
 br/gov/sp/fatec/lab5/repository/UsuarioRepository.class
 br/gov/sp/fatec/lab5/repository/ItemRepository.class
 br/gov/sp/fatec/lab5/repository/RoleRepository.class
+br/gov/sp/fatec/lab5/exception/RegistroNaoEncontradoException.class
 br/gov/sp/fatec/lab5/controller/ClientePFController.class
 br/gov/sp/fatec/lab5/entity/PagamentoDinheiro.class
 br/gov/sp/fatec/lab5/entity/ClientePJ.class
