@@ -18,6 +18,7 @@
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/repository/UsuarioRepository.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/ItemPedido.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/Pagamento.java
+/workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/Config/WebConfig.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/Pedido.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/Role.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/repository/ItemPedidoRepository.java
