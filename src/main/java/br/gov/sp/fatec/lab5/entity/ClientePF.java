@@ -35,4 +35,20 @@ public class ClientePF extends Cliente {
     public void setEndereco(String end){
         this.endereco=end;
     }
+
+    public void setId(Long id) {
+        this.id=id;
+    }
+
+    public Long getId() {
+        return id;
+    }
+    public String getCpf() {
+        return cpf;
+    }
+
+    public void setCpf(String cpf) {
+        this.cpf = cpf;
+    }
+
 }

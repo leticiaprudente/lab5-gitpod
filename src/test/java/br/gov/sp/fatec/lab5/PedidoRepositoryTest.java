@@ -92,7 +92,7 @@ public class PedidoRepositoryTest {
 
         List<Pedido> pedidos = pedidoRepository.findByClienteAndItem("Gabriel", "cabo usb");
 
-        Assertions.assertEquals(3, pedidos.size());
+        Assertions.assertEquals(1, pedidos.size(), 0);
 
     }
 

@@ -23,4 +23,14 @@ public class PagamentoDinheiro extends Pagamento {
                 ", id=" + id +
                 '}';
     }
+
+    public Double getDesconto() {
+        return desconto;
+    }
+
+    public void setDesconto(Double desconto) {
+        this.desconto = desconto;
+    }
+
+    
 }

@@ -1,4 +1,12 @@
 -------------------------------------------------------------------------------
 Test set: br.gov.sp.fatec.lab5.PedidoRepositoryTest
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.272 s - in br.gov.sp.fatec.lab5.PedidoRepositoryTest
+Tests run: 1, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 6.023 s <<< FAILURE! - in br.gov.sp.fatec.lab5.PedidoRepositoryTest
+br.gov.sp.fatec.lab5.PedidoRepositoryTest  Time elapsed: 6.021 s  <<< ERROR!
+org.springframework.beans.InvalidPropertyException: Invalid property 'id' of bean class [br.gov.sp.fatec.lab5.entity.ClientePF]: Getter for property 'id' threw exception; nested exception is java.lang.reflect.InvocationTargetException
+	at br.gov.sp.fatec.lab5.PedidoRepositoryTest.setUp(PedidoRepositoryTest.java:60)
+Caused by: java.lang.reflect.InvocationTargetException
+	at br.gov.sp.fatec.lab5.PedidoRepositoryTest.setUp(PedidoRepositoryTest.java:60)
+Caused by: java.lang.NullPointerException
+	at br.gov.sp.fatec.lab5.PedidoRepositoryTest.setUp(PedidoRepositoryTest.java:60)
+

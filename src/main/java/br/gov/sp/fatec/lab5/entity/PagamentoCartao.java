@@ -23,4 +23,15 @@ public class PagamentoCartao extends Pagamento {
                 ", id=" + id +
                 '}';
     }
+
+    public Integer getParcelas() {
+        return parcelas;
+    }
+
+    public void setParcelas(Integer parcelas) {
+        this.parcelas = parcelas;
+    }
+
+
+    
 }

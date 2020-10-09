@@ -152,5 +152,17 @@ public class Pedido extends Identificador{
     public Long getId() {
         return id;
     }
+
+    public Set<ItemPedido> getItems() {
+        return items;
+    }
+
+    public Set<Pagamento> getPagamentos() {
+        return pagamentos;
+    }
+
+    public void setPagamentos(Set<Pagamento> pagamentos) {
+        this.pagamentos = pagamentos;
+    }
     
 }
