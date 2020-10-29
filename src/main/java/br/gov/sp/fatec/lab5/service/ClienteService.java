@@ -8,11 +8,14 @@ import br.gov.sp.fatec.lab5.entity.Cliente;
 import br.gov.sp.fatec.lab5.entity.ClientePF;
 import br.gov.sp.fatec.lab5.exception.RegistroNaoEncontradoException;
 import br.gov.sp.fatec.lab5.repository.ClienteRepository;
-@Service
+
+
+@Service //fica disponível para demais classes
 public class ClienteService {
 
     @Autowired
     private ClienteRepository repository;
+
 
     public Iterable<Cliente> findAll(){
         return repository.findAll();

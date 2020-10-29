@@ -100,7 +100,7 @@ insert into usr_usuario (usuario, senha)
   values ('admin', '$2a$10$i3.Z8Yv1Fwl0I5SNjdCGkOTRGQjGvHjh/gMZhdc3e7LIovAklqM6C');
 
 insert into usr_usuario (usuario, senha)
-  values ('usr', '$2a$10$i3.Z8Yv1Fwl0I5SNjdCGkOTRGQjGvHjh/gMZhdc3e7LIovAklqM6C');
+  values ('usr', '$2y$12$cmwP3OnSNPBmuyz6C1q.Mu52pNtKbxNluKVWjmMOhRlgwDiumjUk2');
 
 
 

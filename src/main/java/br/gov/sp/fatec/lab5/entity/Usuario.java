@@ -11,7 +11,7 @@ public class Usuario {
 
     @Id
     private String usuario;
-
+    @Column
     private String senha;
 
     @ManyToMany
@@ -60,5 +60,6 @@ public class Usuario {
 		this.usuario=nome;
 		
 	}
+
 
 }
