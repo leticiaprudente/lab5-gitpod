@@ -1,5 +1,5 @@
-/workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/PagamentoCartao.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/service/PedidoService.java
+/workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/PagamentoCartao.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/repository/PedidoRepository.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/security/SecurityConfig.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/service/ClienteService.java
@@ -10,8 +10,8 @@
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/exception/RegistroNaoEncontradoException.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/PagamentoDinheiro.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/controller/ClientePFController.java
-/workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/Cliente.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/Item.java
+/workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/Cliente.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/repository/RoleRepository.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/repository/ItemRepository.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/Fornecedor.java
@@ -20,8 +20,8 @@
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/repository/UsuarioRepository.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/ItemPedido.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/Pagamento.java
-/workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/Pedido.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/config/WebConfig.java
+/workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/Pedido.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/entity/Role.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/repository/ItemPedidoRepository.java
 /workspace/lab5-gitpod/src/main/java/br/gov/sp/fatec/lab5/Lab5Application.java

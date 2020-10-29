@@ -1,6 +1,7 @@
 package br.gov.sp.fatec.lab5.service;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.prepost.PreAuthorize;
 import org.springframework.stereotype.Service;
 
 import br.gov.sp.fatec.lab5.entity.Cliente;
@@ -16,7 +17,7 @@ public class ClienteService {
     public Iterable<Cliente> findAll(){
         return repository.findAll();
     }
-
+    @PreAuthorize("hasRole('ROLE_ADMIN')")
     public Cliente buscarUsuarioPorId(Long id){
         Cliente cli = repository.findAById(id);
         if(cli!= null){
@@ -37,7 +38,7 @@ public class ClienteService {
     public Cliente update(Cliente cliente) {
         return repository.save(cliente);
     }
-
+    @PreAuthorize("isAuthenticated()")
     public Cliente buscarPorNome(String nome) {
         Cliente cli = repository.findByNome(nome);
         if(cli!= null){

@@ -1,8 +1,8 @@
 br/gov/sp/fatec/lab5/entity/Views$Publico.class
-br/gov/sp/fatec/lab5/entity/Views$Autenticado.class
 br/gov/sp/fatec/lab5/entity/ItemPedido.class
-br/gov/sp/fatec/lab5/entity/PagamentoCartao.class
+br/gov/sp/fatec/lab5/entity/Views$Autenticado.class
 br/gov/sp/fatec/lab5/service/ClienteService.class
+br/gov/sp/fatec/lab5/entity/PagamentoCartao.class
 br/gov/sp/fatec/lab5/entity/Pagamento.class
 br/gov/sp/fatec/lab5/entity/Fornecedor.class
 br/gov/sp/fatec/lab5/entity/Identificador.class
@@ -11,9 +11,9 @@ br/gov/sp/fatec/lab5/repository/UsuarioRepository.class
 br/gov/sp/fatec/lab5/repository/ItemRepository.class
 br/gov/sp/fatec/lab5/repository/RoleRepository.class
 br/gov/sp/fatec/lab5/exception/RegistroNaoEncontradoException.class
+br/gov/sp/fatec/lab5/controller/ClientePFController.class
 br/gov/sp/fatec/lab5/entity/ClientePJ.class
 br/gov/sp/fatec/lab5/entity/PagamentoDinheiro.class
-br/gov/sp/fatec/lab5/controller/ClientePFController.class
 br/gov/sp/fatec/lab5/entity/Usuario.class
 br/gov/sp/fatec/lab5/repository/ClienteRepository.class
 br/gov/sp/fatec/lab5/security/SecurityConfig.class
@@ -22,8 +22,8 @@ br/gov/sp/fatec/lab5/entity/Item.class
 br/gov/sp/fatec/lab5/Lab5Application.class
 br/gov/sp/fatec/lab5/service/PedidoService.class
 br/gov/sp/fatec/lab5/entity/ClientePF.class
-br/gov/sp/fatec/lab5/entity/Cliente.class
 br/gov/sp/fatec/lab5/entity/Role.class
+br/gov/sp/fatec/lab5/entity/Cliente.class
 br/gov/sp/fatec/lab5/config/WebConfig.class
 br/gov/sp/fatec/lab5/repository/ItemPedidoRepository.class
 br/gov/sp/fatec/lab5/repository/PedidoRepository.class

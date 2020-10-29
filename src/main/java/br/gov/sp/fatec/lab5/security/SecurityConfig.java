@@ -14,18 +14,18 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 @EnableWebSecurity
 @EnableGlobalMethodSecurity(prePostEnabled = true) // a notação significa que o que estivar anotado está seguro e o restante está aberto
 public class SecurityConfig extends WebSecurityConfigurerAdapter {
-    @Autowired
-    private UserDetailsService userDetailsService;
+    //@Autowired
+    //private UserDetailsService userDetailsService;
 
     @Override
     protected void configure(HttpSecurity http) throws Exception {
-        http.csrf().disable().httpBasic().and() // csrf - Metodo de segurança por token, usando quando o back e o front
-                                                // são misturados
-                // depois de utilizar a sessão a memória dela será descartada
-                .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS); // rest será stateless
+        http.csrf().disable(). // csrf - Metodo de segurança por token, usando quando o back e o front são misturados
+        httpBasic().and() 
+        .sessionManagement().sessionCreationPolicy(SessionCreationPolicy.STATELESS); // rest será stateless
+        // depois de utilizar a sessão a memória dela será descartada
     }
 
-    @Override
+   /* @Override
     public void configure(AuthenticationManagerBuilder auth) throws Exception {
         auth.userDetailsService(userDetailsService);
     }
@@ -34,6 +34,6 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
     @Override
     public AuthenticationManager authenticationManagerBean () throws Exception{
         return super.authenticationManager();
-    }
+    }*/
 
 }

@@ -95,3 +95,30 @@ CREATE TABLE usr_has_roles(
     roles(role_name),
     CONSTRAINT pk_roles PRIMARY KEY(role_name, usuario)
 );
+
+insert into usr_usuario (usuario, senha)
+  values ('admin', '$2a$10$i3.Z8Yv1Fwl0I5SNjdCGkOTRGQjGvHjh/gMZhdc3e7LIovAklqM6C');
+
+insert into usr_usuario (usuario, senha)
+  values ('usr', '$2a$10$i3.Z8Yv1Fwl0I5SNjdCGkOTRGQjGvHjh/gMZhdc3e7LIovAklqM6C');
+
+
+
+insert into roles (role_name)
+  value ('ROLE_ADMIN');
+
+insert into roles (role_name)
+  value ('ROLE_USR');
+
+
+insert into usr_has_roles (usuario, role_name)
+  select usuario, role_name
+    from usr_usuario, roles
+    where usuario = 'admin'
+    and role_name = 'ROLE_ADMIN';
+
+insert into usr_has_roles (usuario, role_name)
+  select usuario, role_name
+    from usr_usuario, roles
+    where usuario = 'usr'
+    and role_name = 'ROLE_USR';
