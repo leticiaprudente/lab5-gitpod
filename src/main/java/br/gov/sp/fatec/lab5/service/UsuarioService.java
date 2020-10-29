@@ -1,20 +1,31 @@
 package br.gov.sp.fatec.lab5.service;
 
+import java.util.HashSet;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.access.prepost.PreAuthorize;
+import org.springframework.security.config.annotation.authentication.configurers.userdetails.UserDetailsServiceConfigurer;
+import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.crypto.password.PasswordEncoder;
+import org.springframework.stereotype.Service;
 
+import br.gov.sp.fatec.lab5.entity.Role;
 import br.gov.sp.fatec.lab5.entity.Usuario;
 import br.gov.sp.fatec.lab5.exception.RegistroNaoEncontradoException;
+import br.gov.sp.fatec.lab5.repository.RoleRepository;
+import br.gov.sp.fatec.lab5.repository.UsuarioRepository;
 
 
 @Service
-public class UsuarioService {
+public class UsuarioService extends UserDetailsService{
     @Autowired
-    private Usuario usr_repository;
+    private UsuarioRepository usr_repository;
 
     @Autowired
-    private PasswordEncoder passEnconder;
+    private PasswordEncoder pass_Enconder;
+
+	@Autowired
+	private RoleRepository role_repository;
 
     
     public Iterable<Usuario> findAll(){
@@ -22,13 +33,12 @@ public class UsuarioService {
     }
 
     @PreAuthorize("hasRole('ROLE_ADMIN')")
-    public Usuario buscarUsuarioPorId(String usr) {
-        Usuario cli = usr_repository.findAById(usr);
+    public Usuario buscarUsuarioPorId(String id) {
+        Usuario usr = usr_repository.findAById(id);
         if (usr != null) {
             return usr;
         }
         throw new RegistroNaoEncontradoException("Id não encontrado");
-        // return repository.findById(id).orElse(null);
     }
 
     public void save(Usuario usr) {
@@ -42,26 +52,27 @@ public class UsuarioService {
     public Usuario update(Usuario usr) {
         return usr_repository.save(usr);
     }
-
-    @PreAuthorize("isAuthenticated()")
-    public Usuario buscarPorNome(String usuario) {
-        Usuario usr = usr_repository.findById(usuario);
-        if (usr!= null) {
-            return usr;
+    public Usuario criarUsuario(String usuario, String senha, String role){
+        Role nome_role = role_repository.findByNome(role);
+        if(nome_role == null){
+            nome_role = new Role();
+            nome_role.setRole(role);
+            role_repository.save(nome_role);
         }
-        throw new RegistroNaoEncontradoException("Nome não encontrado");
-        // return repository.findByNome(nome);
+        Usuario novoUsr = new Usuario();
+        novoUsr.setUsuario(usuario);
+        novoUsr.setSenha(pass_Enconder.encode(senha));
+        novoUsr.setRoles(new HashSet<Role>());
+        novoUsr.getRoles().add(nome_role);
+        return novoUsr;
     }
+    
+
 
     @PreAuthorize("hasRole('ROLE_ADMIN')")
     public static Usuario cadastrarUsuario(String usr, String senha) {
         return null;
     }
 
-    public Object buscarUsuarioPorUsr(String usr) {
-        Usuario usr = usr_repository.findByNome(usr);
-        if(usr!= null){
-            return usr;
-        }throw new RegistroNaoEncontradoException("Usuario  não encontrado"); 
-    }
+
 }
